@@ -1,9 +1,10 @@
 # Video Protection
 
-Videos can be protected in JW platform in two ways:
+Videos can be protected in JW platform in three ways:
 
 - **Signed URLs:** A player can only **access** video URLs from JW Player backend using a time-bound JWT token
-- **DRM:** A player can only **play** videos using a time-bound decryption key. 
+- **HLS AES-128 Encryption:** A player can only **play** videos using a decryptoin key.
+- **DRM:** A player can only **play** videos using a decryption key that is provided if the DRM Policy is met. 
 
 The  JW Web Player, as well as the other SDKs, supports these mechanismns out-the-box. However this requires a server side authorization service which is **NOT** part of the web app and needs to be **custom developed**.
 
